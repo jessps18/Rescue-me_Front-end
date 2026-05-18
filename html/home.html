@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/home.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/seo.png">
+    <title>Rescue-me</title>
+</head>
+
+<body>
+
+    <div class="topo">
+        <button id="menuBtn">☰</button>
+    </div>
+
+    <div id="menu" class="menu">
+        <button id="fecharMenu">✖</button>
+
+        <div>
+            <div class="foto2"></div>
+            <a href="./perfil.html">Meu Perfil</a>
+        </div>
+        <div>
+            <img src="" alt="">
+            <a href="./meusObjetos.html">Meus objetos</a>
+        </div>
+        <div>
+            <a href="./recuperados.html">recuperados</a>
+        </div>
+       <div>
+        <a href="./minhasDenuncias.html">Minhas denúncias</a>
+       </div>
+       <button id="btnSair"> ⌦ Sair</button>
+        
+
+    </div>
+
+    <div id="listaObjetos"></div>
+
+    <button id="addBtn">+</button>
+
+    <div id="modalObjeto" class="modal">
+        <div class="conteudoModal">
+            <h2>Adicionar objeto</h2>
+
+            <input placeholder="Nome" id="nome">
+            <textarea placeholder="Descrição" id="descricao"></textarea>
+            <input placeholder="local" id="local">
+            <input placeholder="onde deixou" id="deixou">
+
+            <div class="acao">
+                <button onclick="fecharObjeto()" id="fecharObjeto">Cancelar</button>
+                <button id="salvarObjeto">cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalDenuncia" class="modal">
+        <div class="conteudoModal">
+
+            <h2>Denunciar</h2>
+
+            <textarea placeholder="Motivo" id="descricaoDenuncia"></textarea>
+
+            <div class="acao">
+                <button onclick="fecharDenuncia()" id="fecharDenuncia">Cancelar</button>
+                <button id="salvarDenuncia">Enviar</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
