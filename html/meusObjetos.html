@@ -20,10 +20,8 @@
     <div class="topo">
         <button id="menuBtn">☰</button>
     </div>
-
     <div id="menu" class="menu">
         <button id="fecharMenu">✖</button>
-
         <div>
             <div class="foto2"></div>
             <a href="./perfil.html">Meu Perfil</a>
@@ -36,15 +34,13 @@
             <img src="" alt="">
             <a href="./meusObjetos.html">Meus objetos</a>
         </div>
-        
+
         <div>
             <a href="./minhasDenuncias.html">Minhas denúncias</a>
         </div>
         <button id="btnSair"> ⌦ Sair</button>
 
-
     </div>
-
     <div id="listaObjetos"></div>
 
     <button id="addBtn">+</button>
@@ -52,7 +48,6 @@
     <div id="modalObjeto" class="modal">
         <div class="conteudoModal">
             <h2>Adicionar objeto</h2>
-
             <input placeholder="Nome" id="nome">
             <textarea placeholder="Descrição" id="descricao"></textarea>
             <input placeholder="local" id="local">
@@ -66,52 +61,28 @@
     </div>
 
     <div id="modalEditar" class="modal">
-
         <div class="conteudoModal">
-
             <h2>Editar objeto</h2>
-
             <input id="editNome" placeholder="Nome">
-
             <textarea id="editDescricao" placeholder="Descrição"></textarea>
-
             <input id="editLocal" placeholder="Local encontrado">
-
             <input id="editDeixou" placeholder="Onde deixou">
-
-
             <div class="recuperacaoArea">
-
                 <label>
                     <input type="checkbox" id="editRecuperado">
                     Objeto recuperado
                 </label>
-
                 <select id="quemRecuperou"></select>
-
             </div>
-
-
             <div class="acao">
-
                 <button id="fechar" onclick="fecharEditar()">
-
                     Cancelar
-
                 </button>
-
                 <button id="salvarEdicao">
-
                     Salvar
-
                 </button>
-
             </div>
-
         </div>
-
     </div>
-
 </body>
-
 </html>

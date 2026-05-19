@@ -5,22 +5,17 @@ if (!usuarioId) {
 }
 
 const lista = document.getElementById('listaObjetos');
-
 async function carregarObjetos() {
 
     try {
         const resposta = await fetch('http://localhost:8000/Objetos');
         const dados = await resposta.json();
-
         lista.innerHTML = '';
 
         dados.objetos.forEach(obj => {
-
             lista.innerHTML += `
             <div class="card">
-
                 <div class="denuncia" onclick="abrirDenuncia(${obj.id_objeto})">⚠</div>
-
                 <div class="perfil">
                     <div class="foto"></div>
                     <div>
@@ -32,13 +27,10 @@ async function carregarObjetos() {
 
                 <h2>${obj.nome_objeto}</h2>
                 <p>${obj.descricao}</p>
-
                 <p><b>Encontrado:</b> ${obj.local_encontrado}</p>
                 <p><b>Deixado:</b> ${obj.onde_deixou}</p>
-
                 <p>📞 ${obj.encontrado_por_numero}</p>
                 <p>🎓 ${obj.encontrado_por_curso}</p>
-
             </div>`;
         });
 
@@ -49,7 +41,6 @@ async function carregarObjetos() {
 
 carregarObjetos();
 
-
 document.getElementById('addBtn').onclick = () => {
     document.getElementById('modalObjeto').style.display = 'flex';
 };
@@ -58,7 +49,6 @@ document.getElementById('addBtn').onclick = () => {
 window.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('salvarObjeto').onclick = async () => {
-
         const nome = document.getElementById("nome").value;
         const descricao = document.getElementById("descricao").value;
         const local = document.getElementById("local").value;
@@ -99,10 +89,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 timerProgressBar: true,
                 showConfirmButton: false
             })
-
-            // atualiza lista sem reload
             carregarObjetos();
-
         } catch (error) {
             console.error("Erro ao cadastrar objeto:", error);
         }
@@ -144,10 +131,7 @@ document.getElementById('salvarDenuncia').onclick = async () => {
         const result = await response.json();
         console.log(result);
 
-        // fechar modal
         document.getElementById('modalDenuncia').style.display = 'none';
-
-        // limpar campo
         document.getElementById('descricaoDenuncia').value = "";
 
        Swal.fire({
@@ -173,22 +157,16 @@ const menuBtn = document.getElementById('menuBtn');
 const fecharMenu = document.getElementById('fecharMenu');
 
 menuBtn.onclick = () => {
-
     menu.classList.add('ativo');
-
     menuBtn.style.display = 'none';
 }
 
 fecharMenu.onclick = () => {
-
     menu.classList.remove('ativo');
-
     menuBtn.style.display = 'block';
 }
 
 document.getElementById('btnSair').onclick = () => {
-
     localStorage.clear();
-
     window.location.href = '../index.html';
 };
