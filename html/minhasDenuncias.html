@@ -6,14 +6,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/minhasDenuncias.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/home.js" defer></script>
+    <script src="../js/minhasDenuncias.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagens/seo.png">
     <title>Rescue-me</title>
 </head>
 <body>
+    
+    <button id="menuBtn">☰</button>
+
+    <aside id="menu" class="menu">
+        <button id="fecharMenu">✖</button>
+
+        <div class="perfil-menu">
+            <div class="foto2"></div>
+            <a href="./perfil.html">Meu Perfil</a>
+        </div>
+
+        <nav>
+            <a href="./home.html">Página Inicial</a>
+            <a href="./meusObjetos.html">Meus Objetos</a>
+            <a href="./minhasDenuncias.html">Minhas denúncias</a>
+        </nav>
+
+        <button id="btnSair">⌦ Sair</button>
+    </aside>
+    <main class="container">
+
+        <h1>Minhas Denúncias</h1>
+
+        <p class="subtitulo">
+            Aqui você pode acompanhar todas as denúncias que você fez
+        </p>
+
+        <div id="listaDenuncias" class="lista">
+
+
+        </div>
+
+    </main>
     
 </body>
 </html>

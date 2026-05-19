@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+font-family: "Noto Serif", serif;}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+    180deg,
+    #213A9A 0%,
+    white 100%
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#menuBtn{
+    position:fixed;
+
+    top:20px;
+    left:20px;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:12px;
+
+    font-size:25px;
+
+    background:rgba(255,255,255,.2);
+
+    color:white;
+    cursor:pointer;
+
+    backdrop-filter:blur(5px);
+
+    z-index:1001;
+}
+
+.menu{
+
+    position:fixed;
+
+    left:-280px;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:30px;
+
+    transition:.4s;
+
+    box-shadow:
+    5px 0 20px rgba(0,0,0,.15);
+}
+
+.menu.ativo{
+    left:0;
+}
+
+#fecharMenu{
+
+    position:absolute;
+
+    top:15px;
+    right:20px;
+
+    border:none;
+    background:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+}
+
+.perfil-menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    margin-top:50px;
+}
+
+.foto2,
+.foto{
+
+    border-radius:50%;
+    background:#dcdcdc;
+}
+
+.foto2{
+    width:80px;
+    height:80px;
+}
+
+.foto{
+    width:110px;
+    height:110px;
+}
+
+nav{
+
+    width:100%;
+    margin-top:40px;
+}
+
+nav a{
+
+    display:block;
+
+    padding:15px;
+
+    text-decoration:none;
+
+    color:#213A9A;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    background:#f2f2f2;
+
+    padding-left:25px;
+}
+
+.info{
+
+    width:min(500px,90vw);
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.1);
+}
+
+.info input{
+
+    width:100%;
+    height:45px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#efefef;
+
+    padding-left:15px;
+
+    outline:none;
+
+    font-size:15px;
+}
+
+#btnSair,
+#btnSair2{
+
+    width:100%;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#b20000;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#btnSair:hover,
+#btnSair2:hover{
+
+    transform:translateY(-2px);
+}

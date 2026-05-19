@@ -99,7 +99,6 @@ async function carregarObjetos() {
 carregarObjetos();
 
 
-// ================= MENU =================
 
 const menu = document.getElementById('menu');
 const menuBtn = document.getElementById('menuBtn');

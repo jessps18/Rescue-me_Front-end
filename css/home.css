@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+font-family: "Noto Serif", serif;
 }
 
 body {
@@ -102,7 +102,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* PERFIL */
 .perfil {
     display: flex;
     gap: 10px;
@@ -125,6 +124,17 @@ body {
     flex-shrink: 0;
 }
 
+#btnSair{
+    border: none;
+    background-color: rgb(151, 4, 4);
+    border-radius: 10px;
+    color: white;
+    width: 175px;
+    height: 30px;
+}
+
+
+
 
 .card h2 {
     color: #213A9A;
@@ -136,7 +146,6 @@ body {
     color: #444;
 }
 
-/* DENUNCIA */
 .denuncia {
     position: absolute;
     top: 12px;
